@@ -71,7 +71,7 @@ class Serializer:
 
         :param string the string to be escaped
         """
-
+        if string is None: return ''
         assert(type(string) == str)
 
         characters = [
